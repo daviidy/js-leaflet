@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deep - Dream - Louez facilement vos vélos</title>
+  <meta charset="utf-8"/>
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+
+  <!--on se connecte a bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!--ici on appellle la police roboto-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+</head>
+
+<body>
+
+  <header class="container">
+
+    <div class="row">
+      <h1 class="col-sm-4">Deep - Dream</h1>
+       <nav class="col-sm-8 text-right">
+         <p>nouveautés</p>
+      <p>catalogue</p>
+      <p>contact</p>
+    </div>
+ </header>
+
+    <section class="jumbotron slide1 fade">
+        <div class="container">
+
+          <div class="row text-center">
+
+            <h2>COMMANDEZ DES VELOS PARTOUT DANS LA VILLE DE PARIS</h2>
+        <h3>Le meilleur de l'année</h3>
+        <a class="btn btn-primary" href="#" role="button">Voir tout</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="jumbotron slide2 fade">
+    <div class="container">
+
+      <div class="row text-center">
+
+        <h2>RECEVEZ LES INFOS SUR TOUS NOS VELOS DISPONIBLES</h2>
+    <h3>Le meilleur de l'année</h3>
+    <a class="btn btn-primary" href="#" role="button">Voir tout</a>
+  </div>
+</div>
+
+</section>
+
+
+<section class="jumbotron slide3 fade">
+  <div class="container">
+
+    <div class="row text-center">
+
+      <h2>REFLECHIISEZ MOINS, CIRCULEZ TRANQUILLE</h2>
+  <h3>Le meilleur de l'année</h3>
+  <a class="btn btn-primary" href="#" role="button">Voir tout</a>
+</div>
+</div>
+
+</section>
+
+
+    <section class="container">
+
+      <div class="row">
+         <figure class="col-sm-6">
+           <p>LOCALISER VOTRE VELO A LOUER</p>
+           <div id="map"></div>
+
+         </figure>
+    <figure class="col-sm-6">
+
+      <p>INSCRIVEZ-VOUS</p>
+
+      <span> <strong>Adresse: </strong> </span> <p id="adresseVelo"></p>
+      <span> <strong>Nombre de vélos: </strong> </span> <p id="nombreVelos"></p>
+          <p id="info_station"></p>
+          <form name="frminfo" method="POST" action="">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="Name"  name="txtnom" class="form-control inpunt-lg">
+            </div>
+            <div class="form-group has error">
+                  <label for="prenoms">prénoms</label>
+                  <input type="text" id="Surname"name="txtpnom" class="form-control inpunt-lg">
+              </div>
+                <a href="#confirm" class="btn btn-primary" id="Reserved">Reservez</a>
+  
+          </form>
+        
+
+
+    </figure>
+
+  </div>
+</section>
+
+<section id="confirm">
+  <div id="timer">
+    <span id="timerContent" style="display: block; height: 100px;"></span>
+    Temps Restant : 
+    <span id="min"></span>
+    <span id="sec"></span>
+  </div>
+   <div class="sign" id="sign">
+     <section class="signbox_content">
+       <div id="legend">signez ici</div>
+       <div id="canvasDiv"></div>
+      </section>
+      <div>
+        <a href="" class=" col-sm-6 btn btn-warning">Confirmer</a>
+      </div>
+   </div>
+   <br clear="both">
+</section>
+
+  
+
+    <footer class="container">
+
+      <div class="row">
+    <p class="col-sm-4">&copy; 2019 - Deep Dream</p>
+    <ul class="col-sm-8">
+     <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"></li>
+  <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></li>
+  <li class="col-sm-1"> <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></li>
+  <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"></li>
+    </ul>
+  </div>
+
+</footer>
+
+
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/sign.js"></script>
+
+</body>
+</html>

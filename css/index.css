@@ -1,0 +1,171 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  
+}
+
+.slide1{
+
+  background: url("https://images.unsplash.com/photo-1456121566917-718f3af0df86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center no-repeat fixed;
+  background-size: cover;
+
+}
+
+.slide2{
+
+  background: url("https://images.unsplash.com/photo-1524083531058-82ec9694e8d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center no-repeat fixed;
+  background-size: cover;
+
+}
+
+.slide3{
+
+  background: url("https://images.unsplash.com/photo-1495570042983-249df576ad3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center no-repeat fixed;
+  background-size: cover;
+
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+
+
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+#map { 
+  width: 570px;
+  height: 330px; 
+
+}
+canvas{
+    margin: 0;
+    border: 2px solid #333;
+    background: #ffffff;
+}
+.signbox_content{
+    width: 500px;
+    height: auto;
+    padding: 0;
+
+    /* border: 2px solid mediumseagreen; */
+}
+#legend{
+    position: relative;
+    top: 20px;
+    width: 250px;
+    height: 40px;
+    margin: 0 auto;
+    background: #333;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 20px;
+    font: italic bold 20px/40px Aller;
+}
+  #timer{
+  width: 500px;
+  height: 250px;
+  margin: 40px;
+  font-family: verdana;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #000;
+  color: #101010;
+  display: none;
+}
+#confirm{
+  box-sizing: border-box;
+  padding-right: 20px;
+  display: none;
+}
+
+#sign{
+  float: right;
+}
